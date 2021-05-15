@@ -11,7 +11,7 @@ public class Util {
     private static final String username = "root";
 
 
-    public Connection getConnection() throws SQLException {
+    public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(url, username, password);
     }
 
