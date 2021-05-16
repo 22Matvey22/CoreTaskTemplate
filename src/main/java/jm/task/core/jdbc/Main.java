@@ -15,9 +15,10 @@ public class Main {
         userService.saveUser("Иван", "Матвеев", (byte) 42);
         userService.saveUser("Шильдт", "Петров", (byte) 56);
         userService.saveUser("Фома", "Великий", (byte) 5);
-        System.out.println(userService.getAllUsers());
         userService.cleanUsersTable();
-        userService.dropUsersTable();
+//        System.out.println(userService.getAllUsers());
+//        userService.cleanUsersTable();
+//        userService.dropUsersTable();
         try {
             Util.getConnection().close();
         } catch (SQLException ex) {
